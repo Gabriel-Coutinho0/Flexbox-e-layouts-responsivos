@@ -17,12 +17,15 @@
 .videos__item{
     height: 303px;
     width: 280px;
+    flex-grow:1 ;  /* aumenta conforme a tela aumenta ou seja que quanto maior o valor inserido, mais um item poderá crescer.*/ 
+    /* flex-shrink: 1;  quanto maior o valor inserido, mais este item irá encolher em relação aos seus itens irmãos.*/
     
 }
 .videos__container{
     display: flex;
-    gap: 15px;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* justify-content: space-between; */
 }
 /* DESCRIÇÃO VIDEOS */
 
